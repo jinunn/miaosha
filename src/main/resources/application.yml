@@ -1,0 +1,17 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/miaosha?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  redis:
+    port: 6379
+    host: localhost
+    database: 0
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
